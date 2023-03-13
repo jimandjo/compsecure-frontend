@@ -1,16 +1,15 @@
 
 import { Link, Outlet, Route } from "react-router-dom"
-import { Navbar } from "react-bootstrap"
+import { Button, Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
-import Welcome from "./Welcome"
 
 function Home() {
     return (
         <>
                     {/* Navbar */}
-            <Navbar bg="warning" variant="dark">
+            <Navbar bg="warning" variant="light">
                 <Container fluid>
                 <Navbar.Brand href="/">Compsecure.us</Navbar.Brand>
                     <Nav className="me-auto">
