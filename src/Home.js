@@ -4,7 +4,6 @@ import { Button, NavDropdown, Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
-import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse"
 
 function Home() {
     return (
