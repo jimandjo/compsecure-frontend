@@ -1,6 +1,6 @@
 
-import { Link, Outlet, Route } from "react-router-dom"
-import { Button, NavDropdown, Navbar } from "react-bootstrap"
+import { Link, Outlet } from "react-router-dom"
+import { Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
