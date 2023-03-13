@@ -1,24 +1,27 @@
 
 import { Link, Outlet, Route } from "react-router-dom"
-import { Button, Navbar } from "react-bootstrap"
+import { Button, NavDropdown, Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse"
 
 function Home() {
     return (
         <>
                     {/* Navbar */}
-            <Navbar bg="warning" variant="light">
+            <Navbar bg="warning" variant="light" expand="lg">
                 <Container fluid>
                 <Navbar.Brand href="/">Compsecure.us</Navbar.Brand>
-                    <Nav className="me-auto">
-                        <Link to="/about" className="nav-link">About</Link>
-                        <Link to="/posts" className="nav-link">Posts</Link>
-                    </Nav>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                    <Link to="/about" className="nav-link">About</Link>
+                    <Link to="/posts" className="nav-link">Posts</Link>
+                </Nav>
+                </Navbar.Collapse>
                 </Container>
                 </Navbar>
-
 
                 <Stack gap={3} className="col-md-10 mx-auto">
                     <Outlet />
