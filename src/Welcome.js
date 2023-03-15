@@ -1,6 +1,11 @@
 import React from "react"
 // import { ListGroup } from "react-bootstrap"
 import JimDick from "./JimDick.jpg"
+import compromised from "./compromised.jpg"
+import help from "./help.jpg"
+import GotThis from "./GotThis.jpg"
+import DoIt from "./DoIt.jpg"
+
 function Welcome() {
     return (
         <>
@@ -33,7 +38,7 @@ function Welcome() {
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        {/* <img src={MessyHouse} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/> */}
+        <img src={compromised} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3" a href="#">Are you compromised?</h1>
@@ -53,7 +58,7 @@ function Welcome() {
   <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        {/* <img src={MessyHouse} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/> */}
+        <img src={help} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3" a href="#">I can help</h1>
@@ -72,7 +77,7 @@ function Welcome() {
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        {/* <img src={MessyHouse} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/> */}
+        <img src={GotThis} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3" a href="#">No more fear</h1>
@@ -92,7 +97,7 @@ function Welcome() {
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
-        {/* <img src={MessyHouse} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/> */}
+        <img src={DoIt} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3" a href="#">Start today</h1>
