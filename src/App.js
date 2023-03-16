@@ -5,6 +5,7 @@ import Welcome from './Welcome';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Posts from './Posts';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Welcome />}/>
           <Route path="about" element={<About />} />
           <Route path='posts' element={<Posts />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </BrowserRouter>
