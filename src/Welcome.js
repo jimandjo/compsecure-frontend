@@ -1,5 +1,4 @@
 import React from "react"
-// import { ListGroup } from "react-bootstrap"
 import JimDick from "./JimDick.jpg"
 import compromised from "./compromised.jpg"
 import help from "./help.jpg"
@@ -10,7 +9,7 @@ function Welcome() {
     return (
         <>
        
-        <div class="bg-danger text-dark container col-xxl-8 px-4 py-5" >
+        <div class="bg-danger bg-gradient text-dark container col-xxl-8 px-4 py-5" >
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={JimDick} class="d-block mx-lg-auto img-fluid" alt="Jim Dick" width="700" height="500" loading="lazy"/>
@@ -19,14 +18,6 @@ function Welcome() {
         <h1 class="display-5 fw-bold lh-1 mb-3">Jim Dick  Compsecure.us</h1>
         
         <h4 class="lead">Protect Your CyberSpace. <br /> It Belongs to You.</h4>
-        {/* <h4 class="lead">Services Available:</h4> */}
-        {/* <ListGroup variant="flush">
-              <ListGroup.Item>Residential</ListGroup.Item>
-              <ListGroup.Item>Commercial</ListGroup.Item>
-              <ListGroup.Item>Organizing</ListGroup.Item>
-              <ListGroup.Item>Move-In</ListGroup.Item>
-              <ListGroup.Item>Move-Out </ListGroup.Item>
-            </ListGroup> */}
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <button type="button" class="btn btn-warning btn-lg px-4 me-md-2">Contact Jim</button>
           {/* <button type="button" class="btn btn-outline-secondary btn-lg px-4">Sign Up</button> */}
@@ -35,7 +26,7 @@ function Welcome() {
     </div>
   </div>  
   {/* Second Hero */}
-  <div class="bg-success text-dark container col-xxl-8 px-4 py-5">
+  <div class="bg-success bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={compromised} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -55,7 +46,7 @@ function Welcome() {
   </div>
 
   {/* Third Hero */}
-  <div class="bg-light text-dark container col-xxl-8 px-4 py-5">
+  <div class="bg-light bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={help} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -74,7 +65,7 @@ function Welcome() {
     </div>
   </div>
 {/* Forth Hero */}
-<div class="bg-warning text-dark container col-xxl-8 px-4 py-5">
+<div class="bg-warning bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={GotThis} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -94,7 +85,7 @@ function Welcome() {
   </div>
 {/* Fifth Hero */}
 
-<div class="bg-danger text-dark container col-xxl-8 px-4 py-5">
+<div class="bg-danger bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={DoIt} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
