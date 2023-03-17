@@ -18,7 +18,7 @@ function Welcome() {
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold lh-1 mb-3">Jim Dick  Compsecure.us</h1>
         
-        <h4 class="lead">Protect Your CyberSpace. It Belongs to You.</h4>
+        <h4 class="lead">Protect Your CyberSpace. <br /> It Belongs to You.</h4>
         {/* <h4 class="lead">Services Available:</h4> */}
         {/* <ListGroup variant="flush">
               <ListGroup.Item>Residential</ListGroup.Item>
