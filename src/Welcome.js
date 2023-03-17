@@ -10,7 +10,7 @@ function Welcome() {
     return (
         <>
        
-        <div class="container col-xxl-8 px-4 py-5" >
+        <div class="bg-danger text-dark container col-xxl-8 px-4 py-5" >
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={JimDick} class="d-block mx-lg-auto img-fluid" alt="Jim Dick" width="700" height="500" loading="lazy"/>
@@ -35,7 +35,7 @@ function Welcome() {
     </div>
   </div>  
   {/* Second Hero */}
-  <div class="container col-xxl-8 px-4 py-5">
+  <div class="bg-success text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={compromised} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -55,7 +55,7 @@ function Welcome() {
   </div>
 
   {/* Third Hero */}
-  <div class="container col-xxl-8 px-4 py-5">
+  <div class="bg-light text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={help} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -74,7 +74,7 @@ function Welcome() {
     </div>
   </div>
 {/* Forth Hero */}
-<div class="container col-xxl-8 px-4 py-5">
+<div class="bg-warning text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={GotThis} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -94,7 +94,7 @@ function Welcome() {
   </div>
 {/* Fifth Hero */}
 
-<div class="container col-xxl-8 px-4 py-5">
+<div class="bg-danger text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={DoIt} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
