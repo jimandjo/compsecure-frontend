@@ -6,10 +6,11 @@ import GotThis from "./GotThis.jpg"
 import DoIt from "./DoIt.jpg"
 
 function Welcome() {
+
     return (
         <>
        
-        <div class="bg-danger bg-gradient text-dark container col-xxl-8 px-4 py-5" >
+        <div  class="bg-light bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={JimDick} class="d-block mx-lg-auto img-fluid" alt="Jim Dick" width="700" height="500" loading="lazy"/>
@@ -26,7 +27,7 @@ function Welcome() {
     </div>
   </div>  
   {/* Second Hero */}
-  <div class="bg-success bg-gradient text-dark container col-xxl-8 px-4 py-5">
+  <div class="bg-light bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={compromised} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -65,7 +66,7 @@ function Welcome() {
     </div>
   </div>
 {/* Forth Hero */}
-<div class="bg-warning bg-gradient text-dark container col-xxl-8 px-4 py-5">
+<div class="bg-light bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={GotThis} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
@@ -85,7 +86,7 @@ function Welcome() {
   </div>
 {/* Fifth Hero */}
 
-<div class="bg-danger bg-gradient text-dark container col-xxl-8 px-4 py-5">
+<div class="bg-light bg-gradient text-dark container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div class="col-10 col-sm-8 col-lg-6">
         <img src={DoIt} class="d-block mx-lg-auto img-fluid" alt="Clean House" width="700" height="500" loading="lazy"/>
