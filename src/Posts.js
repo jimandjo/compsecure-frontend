@@ -1,14 +1,18 @@
+import { Card } from "react-bootstrap"
 import posts from "./PostData"
 
 function Posts() {
     let info = posts[0]
     return (
-   
-    <div className='Posts'>
-            <div>{info.title.toUpperCase()}</div>
-            <div> {info.date} </div>
-            <div> {info.body} </div>
-    </div>
+<>
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>{info.title.toUpperCase()}</Card.Title>
+        <Card.Subtitle>{info.date}</Card.Subtitle>
+        <Card.Text>{info.body}</Card.Text>
+      </Card.Body>
+    </Card>
+</>
     
     )
 }
