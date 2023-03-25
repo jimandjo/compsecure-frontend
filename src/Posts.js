@@ -9,7 +9,6 @@ function Posts() {
       <Card.Body>
         <Card.Title>{info.title.toUpperCase()}</Card.Title>
         <Card.Subtitle>{info.date}</Card.Subtitle>
-        <Card.List>{info.list}</Card.List>
         <Card.Text>{info.body}</Card.Text>
       </Card.Body>
     </Card>

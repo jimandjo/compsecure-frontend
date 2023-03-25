@@ -9,7 +9,7 @@ const posts = [
         title: "Home  Cyber Security Checklist",
         date: "January 5, 2024",
         list: ["Update Programs", "Secure Passwords", "List all your devices", "Backup devices", "Install Virus software on all Devices", "Filter Emails", "Turn on Lastest firewall", "Protect your Phones", "Scan the Dark Web", "Log Activity", "Buy Cyber Insurance", "Learn About Cyber Security"],       
-        body: "UPDATING: One of the first things you can do is to always keep your operating system  and software up to date.\n PASSWORDS: Good passwords are a must. Do you have one quick password to use on all your logins? If someone discovers it, they will have access to all your data. It is best practice to use a different password for each login and it must be a long one(8 to 16 characters). Hint: use a Password Manager. More on that in future posts."
+        body: "UPDATING: One of the first things you can do is to always keep your operating system  and software up to date. PASSWORDS: Good passwords are a must. Do you have one quick password to use on all your logins? If someone discovers it, they will have access to all your data. It is best practice to use a different password for each login and it must be a long one(8 to 16 characters). Hint: use a Password Manager. More on that in future posts."
     }
 ]
 
