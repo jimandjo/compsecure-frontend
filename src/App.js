@@ -6,6 +6,7 @@ import Welcome from './Welcome';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Posts from './Posts';
 import Contact from './Contact';
+import ContactList from './ContactList';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
           <Route index element={<Welcome />}/>
           <Route path="about" element={<About />} />
           <Route path='posts' element={<Posts />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="contacts" element={<ContactList />} >
+            <Route index element={<p>Select a contact for more details</p>}/>
+            <Route path=":contactId" element={<Contact />} />
+            <Route path="*" element={<h1>Contact Not Found</h1>} />
+        </Route>
         </Route>
       </Routes>
     </BrowserRouter>
