@@ -17,6 +17,7 @@ function Home() {
                 <Nav className="me-auto">
                     <Link to="/about" className="nav-link">About</Link>
                     <Link to="/posts" className="nav-link">Posts</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                 </Nav>
                 </Navbar.Collapse>
                 </Container>
