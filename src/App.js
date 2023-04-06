@@ -18,6 +18,8 @@ function App() {
           <Route path='posts' element={<Posts />} />
           <Route path="contact" element={<Contact />} />
         </Route>
+        <Route path="*" element={<h1>Page Not Found</h1>} />
+      
       </Routes>
     </BrowserRouter>
     </>
