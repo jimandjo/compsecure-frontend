@@ -23,6 +23,7 @@ function App() {
             <Route path="*" element={<h1>Contact Not Found</h1>} />
         </Route>
         </Route>
+        <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
     </>
