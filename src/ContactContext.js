@@ -6,6 +6,8 @@ export const ContactContext = createContext()
 export const ContactProvider = (props) => {
   const [contacts, setContacts] = useState([])
 
+  
+
   useEffect(() => {
     async function getContacts() {
       await refreshContacts()
@@ -21,7 +23,13 @@ export const ContactProvider = (props) => {
   }
 
   function getContact(id) {
-    return contacts.find(contact => contact.id === parseInt(id))
+    return axios.get(`http://localhost:3010/contacts/${id}`)
+      .then(response =>
+        new Promise((resolve) => resolve(response.data))
+      )
+      .catch((error) =>
+        new Promise((_, reject) => reject(error.response.statusText))
+      )
   }
 
   function deleteContact(id) {
@@ -30,9 +38,19 @@ export const ContactProvider = (props) => {
   }
 
   function addContact(contact) {
+    return axios.post("http://localhost:3010/contacts", contact)
+    .then(response => {
+      refreshContacts()
+      return new Promise((resolve) => resolve(response.data))
+    })
   }
 
   function updateContact(contact) {
+    return axios.put(`http://localhost:3010/contacts/${contact.id}`, contact)
+    .then(response => {
+      refreshContacts()
+      return new Promise((resolve) => resolve(response.data))
+    })
   }
 
   return (

@@ -4,6 +4,7 @@ import Spinner from "react-bootstrap/Spinner"
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { ContactContext } from './ContactContext'
 import { useContext, useState, useEffect } from 'react'
+import { Alert } from "react-bootstrap";
 
 function Contact(props) {
 
@@ -13,13 +14,25 @@ function Contact(props) {
   let { getContact, deleteContact } = useContext(ContactContext)
   let [ contact, setContact ] = useState()
 
+  let [ error, setError ] = useState()
+
   useEffect(() => {
+    setError(null)
     async function fetch() {
       await getContact(params.contactId)
         .then((contact) => setContact(contact))
+        .catch((message) => setError(message))
     }
     fetch()
-  }, [params.contactId]);
+  }, [params.contactId, getContact])
+
+  function errorMessage() {
+    return <Alert variant="danger">There was an error attempting to load this contact: {error}</Alert>
+  }
+
+  if (error) return errorMessage()
+if (contact === undefined) return loading()
+return contact.id !== parseInt(params.contactId) ?  loading() : contactCard()
 
   function handleDeleteContact(id) {
     deleteContact(id)
@@ -40,6 +53,7 @@ function Contact(props) {
           <Card.Text>
             <strong>Phone:</strong> <span>{phone}</span>
           </Card.Text>
+          <Link to={`/contacts/${id}/edit`} className="btn btn-primary mx-3">Edit</Link>
           <Button variant="danger" onClick={handleDeleteContact.bind(this, id)}>Delete</Button>
         </Card.Body>
       </Card>
@@ -50,3 +64,6 @@ function Contact(props) {
 }
 
 export default Contact
+
+
+

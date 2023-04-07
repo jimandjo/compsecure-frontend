@@ -4,6 +4,7 @@ import { Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
+import LoadingIndicator from "./LoadingIndicator"
 
 function Home() {
     return (
@@ -19,12 +20,16 @@ function Home() {
                     <Link to="/posts" className="nav-link">Posts</Link>
                     <Link to="/contact" className="nav-link">Contact</Link>
                     <Link to="/contacts" className="nav-link">ContactList</Link>
+                    <Link to="/contacts/new" className="nav-link">New Contact</Link>
                 </Nav>
+                <Navbar.Text>
+                    <LoadingIndicator />
+                </Navbar.Text>
                 </Navbar.Collapse>
                 </Container>
                 </Navbar>
 
-                <Stack gap={3} className="col-md-10 mx-auto">
+                <Stack gap={3} className="col-md-10 mx-auto mt-3">
                     <Outlet />
                 </Stack>
 
