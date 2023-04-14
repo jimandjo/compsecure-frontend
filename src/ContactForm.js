@@ -24,7 +24,7 @@ function ContactForm() {
         .then((contact) => setContact(contact))
     }
     fetch()
-  }, [id])
+  }, [id, getContact])
 
   function handleChange(event) {
     setContact((preValue) => {

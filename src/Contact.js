@@ -59,8 +59,8 @@ return contact.id !== parseInt(params.contactId) ?  loading() : contactCard()
       </Card>
     )
   }
-  if (contact === undefined) return loading()
-  return contact.id !== parseInt(params.contactId) ?  loading() : contactCard()
+  // if (contact === undefined) return loading()
+  // return contact.id !== parseInt(params.contactId) ?  loading() : contactCard()
 }
 
 export default Contact

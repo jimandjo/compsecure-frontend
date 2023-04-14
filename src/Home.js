@@ -21,6 +21,10 @@ function Home() {
                     <Link to="/contact" className="nav-link">Contact</Link>
                     <Link to="/contacts" className="nav-link">ContactList</Link>
                     <Link to="/contacts/new" className="nav-link">New Contact</Link>
+                    <Link to="/signin" className="nav-link">SignIn</Link>
+                    <Link to="/signup" className="nav-link">SignUp</Link>
+                    <Link to="/post/new" className="nav-link">New Post</Link>
+                    <Link to="/post" className="nav-link">Post</Link>
                 </Nav>
                 <Navbar.Text>
                     <LoadingIndicator />
