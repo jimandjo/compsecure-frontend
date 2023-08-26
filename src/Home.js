@@ -22,7 +22,7 @@ function Home() {
                 </Container>
                 </Navbar>
 
-                <Stack gap={3} className="col-md-10 mx-auto">
+                <Stack gap={3} className="col-md-30 mx-auto">
                     <Outlet />
                 </Stack>
 
