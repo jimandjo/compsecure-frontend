@@ -4,6 +4,7 @@ import { Navbar } from "react-bootstrap"
 import { Nav } from "react-bootstrap"
 import Container from "react-bootstrap/Container"
 import Stack from "react-bootstrap/Stack"
+import Footer from "./Footer.js"
 
 function Home() {
     return (
@@ -25,6 +26,9 @@ function Home() {
                 <Stack gap={3} className="col-md-30 mx-auto">
                     <Outlet />
                 </Stack>
+                <Footer />
+
+                
 
                
         </>
